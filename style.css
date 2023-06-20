@@ -36,6 +36,25 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
+.alert {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+    
+.alert-dismiss {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+    }
 
 .logo {
     font-size: 1.5rem;
