@@ -73,5 +73,31 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+	<script>
+  function dismissAlert() {
+    var alert = document.getElementById('alert');
+    alert.style.display = 'none';
+  }
+  
+  // Create the alert element
+  var alertElement = document.createElement('div');
+  alertElement.id = 'alert';
+  alertElement.className = 'alert';
+  
+  // Customize the alert message
+  alertElement.textContent = "This website is not yet finished and may not work as expected.";
+  
+  // Create the dismiss button
+  var dismissButton = document.createElement('span');
+  dismissButton.className = 'alert-dismiss';
+  dismissButton.textContent = 'Dismiss';
+  dismissButton.addEventListener('click', dismissAlert);
+  
+  // Add the dismiss button to the alert
+  alertElement.appendChild(dismissButton);
+  
+  // Append the alert to the document body
+  document.body.appendChild(alertElement);
+</script>
 </body>
 </html>
