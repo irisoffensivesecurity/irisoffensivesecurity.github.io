@@ -1,3 +1,4 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
@@ -35,11 +36,6 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
  .alert {
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.7);
@@ -51,6 +47,18 @@ nav {
       transform: translate(-50%, -50%);
       z-index: 9999;
       text-align: center;
+    
+.alert-dismiss {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 nav ul {
     display: flex;
