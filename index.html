@@ -85,12 +85,12 @@ s0.parentNode.insertBefore(s1,s0);
   alertElement.className = 'alert';
   
   // Customize the alert message
-  alertElement.textContent = "This website is not yet finished and may not work as expected.";
+  alertElement.textContent = "  This website is not yet finished and may not work as expected.  ";
   
   // Create the dismiss button
   var dismissButton = document.createElement('span');
   dismissButton.className = 'alert-dismiss';
-  dismissButton.textContent = 'Dismiss';
+  dismissButton.textContent = ' [Dismiss] ';
   dismissButton.addEventListener('click', dismissAlert);
   
   // Add the dismiss button to the alert
